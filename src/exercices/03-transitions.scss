@@ -33,6 +33,14 @@
   border-radius: 10px;
 }
 
+.card:hover {
+  background-color: #055d87;
+}
+
 .card-title {
   font-size: 20px;
+}
+
+.card-title:hover {
+  transform: translate(30px);
 }
