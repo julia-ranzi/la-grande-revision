@@ -6,6 +6,7 @@
     border-radius: 50%;
     border: 5px solid #8ecae6;
     border-top-color: #023047;
+    animation: spin 2s linear infinite;
   }
 
   .progress {
@@ -13,6 +14,7 @@
     background: #8ecae6;
     border-radius: 10px;
     overflow: hidden;
+    animation: progress 4s linear infinite;
   }
 
   .progress-inner {
@@ -20,5 +22,27 @@
     height: 100%;
     background: #023047;
     border-radius: 10px;
+    animation: progressFill 4s linear ininite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate (0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes progressFill {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
   }
 }
